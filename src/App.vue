@@ -19,7 +19,7 @@ export default {
     destroyed() {
         window.removeEventListener("message", this.listener);
     },
-    mouted() {
+    mounted() {
         this.listener = window.addEventListener(
           'message',
           event => {
